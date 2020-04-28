@@ -61,6 +61,7 @@ var timekeeper = {
 		clearInterval(timekeeper.timer);
 		timekeeper.timer = null;
 		timekeeper.hour = timekeeper.minute = timekeeper.second = 0;
+		document.getElementById('hour').value = document.getElementById('minute').value = document.getElementById('second').value = 0;
 		timekeeper.now = null;
 		timekeeper.time.innerHTML = "00:00:00";
 		timekeeper.go.value = "Start";
