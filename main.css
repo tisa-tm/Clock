@@ -3,7 +3,6 @@ body{
 	color: black;
 	height: 100%;
 	width: 100%;
-	/*color: #847E7E;*/
 }
 @keyframes gradient { 
   0% { background-position: 0% 50% }
@@ -72,6 +71,7 @@ body{
 	box-shadow: 1px 1px 2px gray;
 	color: #746D6D;
 			 /*-2px -2px 5px lightgray;*/
+
 }
 
 
