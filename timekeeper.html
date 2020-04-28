@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Time Keeper</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class = "container">
+		<div class = "buttonGroup">
+			<a href="index.html"><button  class = "inputButton">Clock</button></a>
+			<a href="stopwatch.html"><button  class = "inputButton">Stop Watch</button></a>
+		</div><br>
+		<div class = "sparkle">
+			<div>
+				<input class = "inp" type="numeric" id="hour" value = 0>
+				<input class = "inp" type="numeric" id="minute" value = 0>
+				<input class = "inp" type="numeric" id="second" value = 0>
+			</div><br>
+			
+	    	<div id="time">00:00:00</div><br>
+	    	<div>
+	    		<input class = "inputButton" type="button" value="Reset" id="reset">
+				<input class = "inputButton" type="button" value="Start" id="go">
+	    	</div>
+		</div>
+		</div>
+    <script type="text/javascript" src = "timekeeper.js"></script>
+</body>
+</html>

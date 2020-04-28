@@ -1,23 +1,74 @@
 body{
 	background-color: #F2E6FF;
 	color: black;
+	height: 100%;
+	width: 100%;
+	color: #847E7E;
 }
 @keyframes gradient { 
   0% { background-position: 0% 50% }
   50% { background-position: right center }
   100% { background-position: 0% 50% }
 }
-#container{
-	position: relative;
-	display: flex-block;
-	top: 25%;
-	width: 40%;
-	height: 20%;
-	padding: 3rem 3rem; 
+
+.container{
+	/*for centering this container*/
+	position: absolute;
+	top: 0;
+	bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	width: 70%;
+	height: 80%;
+	/*for centering the items in this container*/
+	align-items: center;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	/*border: solid black;*/
+}
+.sparkle{
+	width: 70%;
+	height: 70%;
+	/*for centering the items in this container*/
+	align-items: center;
+  	display: flex;
+  	justify-content: center;
+  	flex-direction: column;
 	background-image: linear-gradient(to right, #D9B3FF 0%, #FF99AA 50%, #D9B3FF 100%);
 	background-size: 300% 300%;
-	animation: gradient 3s ease infinite;
+	animation: gradient 5s ease infinite;
+	font-size: 30px;
+	/*border: solid black;*/
 }
-
+/*button{
+	background-color: #FFF899;
+	background-color: #FBC442;
+	padding: 10px 10px;
+	height: 40px;
+	width: 100px;
+	margin-right: 20px;
+	margin-left: 20px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px gray;
+}*/
+			 
+.inp{
+	width: 30px;
+	height: 30px;
+	text-align: center;
+}
+.inputButton{
+	background-color: #FBC442;
+	padding: 10px 10px;
+	height: 40px;
+	width: 100px;
+	border: none;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px gray;
+			 /*-2px -2px 5px lightgray;*/
+}
 
 
