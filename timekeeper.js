@@ -15,6 +15,8 @@ var timekeeper = {
 
 		timekeeper.reset.addEventListener("click", timekeeper.resetFunction);
 		timekeeper.go.addEventListener("click", timekeeper.start);
+		src = 'bensound-happyrock.mp3';
+		audio = new Audio(src);
 
 	},
 
@@ -34,7 +36,10 @@ var timekeeper = {
 
 		var alarm = (timekeeper.hour*60*60) + (timekeeper.minute*60) + (timekeeper.second*1);
 		if(timekeeper.now > alarm){
-			alert('Time up!');
+			// src = 'bensound-happyrock.mp3';
+			// audio = new Audio(src);
+			audio.play();
+			alert('Time up! Press reset to stop the notification sound');
 			timekeeper.resetFunction();
 		}
 	},
@@ -67,6 +72,7 @@ var timekeeper = {
 		timekeeper.go.value = "Start";
 	    timekeeper.go.removeEventListener("click", timekeeper.stop);
 	    timekeeper.go.addEventListener("click", timekeeper.start);
+	    audio.pause();
 	}
 };
 
