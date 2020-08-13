@@ -37,7 +37,7 @@ body{
   	flex-direction: column;
 	background-image: linear-gradient(to right, #D9B3FF 0%, #FF99AA 50%, #D9B3FF 100%);
 	background-size: 300% 300%;
-	animation: gradient 5s ease infinite;
+	animation: gradient 2s ease infinite;
 	font-size: 30px;
 	box-shadow: 2px 2px 2px gray,
 			-2px -2px 5px lightgray;
